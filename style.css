@@ -100,10 +100,13 @@ input{
 }
 input[type="text"], input[type="email"], input[type="password"]{
     padding-left: 20px;
-    outline-style: none;
+    outline: none;
     background-repeat: no-repeat;
     background-size: 16px 16px;
     background-position: right 10px center;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+    outline: 1px solid rgb(112, 111, 111);
 }
 .error{
     text-align: end;
@@ -164,6 +167,7 @@ a{
         width: 1108px;
         display: flex;
         justify-content: space-between;
+        margin: 120px auto;
     }
     .section1{
         width: 495px;
